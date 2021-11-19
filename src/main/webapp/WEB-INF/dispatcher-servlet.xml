@@ -61,6 +61,10 @@ http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
 	<bean id="dao" class="com.simplilearn.dao.ProductDAO">
 		<property name="template" ref="jt"></property>
 	</bean>
+	
+	<bean id="userdao" class="com.simplilearn.dao.UserDAO">
+		<property name="template" ref="jt"></property>
+	</bean>
 
 	<tx:annotation-driven />
 </beans>
